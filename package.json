@@ -1,0 +1,20 @@
+{
+  "name": "boblog-yanght",
+  "version": "1.0.0",
+  "description": "模仿梁凤波大佬，写一遍他的boblog",
+  "main": "index.js",
+  "repository": "https://github.com/yanght-china/boblog-yanght.git",
+  "author": "杨洪涛 <422209678@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-ratelimit": "^5.0.1",
+    "koa-router": "^10.1.1",
+    "nodemon": "^2.0.14"
+  }
+}
