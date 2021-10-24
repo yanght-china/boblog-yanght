@@ -9,7 +9,7 @@ const Router = require('koa-router');
 // const {  } = require('@validators/admin');
 
 const router = new Router({
-    prefix: 'api/v1/admin'
+    prefix: '/api/v1/admin'
 })
 
 // 管理员登录
