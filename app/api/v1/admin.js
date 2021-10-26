@@ -6,7 +6,7 @@
 
 const Router = require('koa-router');
 
-// const {  } = require('@validators/admin');
+const { AdminLoginValidator } = require('@validators/admin');
 
 const router = new Router({
     prefix: '/api/v1/admin'
@@ -14,8 +14,10 @@ const router = new Router({
 
 // 管理员登录
 router.post('/login', async (ctx) => {
-    console.log(1111)
-    // const v = await new AdminLoginValidator().validate(ctx)
+    const v = await new AdminLoginValidator().validate(ctx);
+    console.log(v.get('body.email'))
+    console.log(v.get('body.password'))
+    
 })
 
 module.exports = router

@@ -1,6 +1,6 @@
 const Koa = require('koa');
 const InitManager = require('./core/init');
-// const parser = require('koa-bodyparser');
+const parser = require('koa-bodyparser');
 const cors = require('@koa/cors');
 // const ratelimit = require('koa-ratelimit');
 
@@ -10,7 +10,7 @@ const app = new Koa();
 
 app.use(cors())
 // app.use(catchError)
-// app.use(parser())
+app.use(parser())
 
 // 接口调用频率限制（Rate-Limiting）
 // Rate limiter middleware for koa.
